@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean name="emp1" class="com.java.collections.Emp">
+ <property name="name" value="Rolex" />
+ 
+ 
+ <property name="phones">
+ <list>
+ <value>1234</value>
+ <value>5678</value>
+ </list>
+ </property>
+ 
+ <property name="address">
+ <set>
+ <value>Vizag</value>
+ <value>Anakapali</value>
+ </set>
+ </property>
+ 
+<property name="courses">
+<map>
+<entry key="java" value="5 monthses"/>
+<entry key="sql" value="3 monthses"/>
+</map>
+
+</property>  
+ </bean>
+ 
+ 
+ 
+</beans>
